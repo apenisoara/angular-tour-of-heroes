@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-export class Hero {
-  id: number;
-  name: string;
-}
+import { Hero } from "./hero";
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
@@ -27,9 +23,9 @@ const HEROES: Hero[] = [
 export class AppComponent {
   title = 'Tour of Heroes';
   heroes = HEROES;
-  selectedHero: Hero;
+  hero: Hero;
 
   onSelect(hero: Hero): void {
-    this.selectedHero = hero;
+    this.hero = hero;
   }
 }

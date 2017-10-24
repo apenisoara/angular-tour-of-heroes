@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Hero} from "../hero";
 
 @Component({
   selector: 'ath-hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css']
 })
-export class HeroDetailComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class HeroDetailComponent {
+  hero: Hero;
 }
