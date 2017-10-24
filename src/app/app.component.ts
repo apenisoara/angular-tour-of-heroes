@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ath-root',
-  templateUrl: './app.component.html',
+  template: `<h1>{{title}}</h1><h2>{{hero}} details !</h2>`,
+  // templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ath';
+  title = 'Tour of Heroes';
+  hero = 'Windstorm';
 }
